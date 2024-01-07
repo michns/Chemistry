@@ -1,0 +1,257 @@
+          /* Table Initialization */
+
+CREATE TABLE "atom" (
+	"atomic_number"	INTEGER NOT NULL UNIQUE,
+	"name"	TEXT,
+	"symbol"	TEXT,
+	"atomic_weight"	REAL,
+	"metallic_class"	TEXT,
+    "group"   INTEGER,
+    "period"  INTEGER,
+	PRIMARY KEY("atomic_number")
+);
+
+
+--------------------------------------------------------------------
+
+          /* Data Insertion */
+
+/* Let's insert all the chemical elements into the atom table. */
+
+
+
+INSERT INTO atom VALUES (1, 'Hydrogen', 'H', 1.0079, 'Nonmetal', 1, 1);
+
+INSERT INTO atom VALUES (2, 'Helium', 'He', 4.0026, 'Nonmetal', 18, 1);
+
+INSERT INTO atom VALUES (3, 'Lithium', 'Li', 6.94, 'Metal', 1, 2);
+
+INSERT INTO atom VALUES (4, 'Beryllium', 'Be', 9.0122, 'Metal', 2, 2);
+
+INSERT INTO atom VALUES (5, 'Boron', 'B', 10.81, 'Metalloid', 13, 2);
+
+INSERT INTO atom VALUES (6, 'Carbon', 'C', 12.011, 'Nonmetal', 14, 2);
+
+INSERT INTO atom VALUES (7, 'Nitrogen', 'N', 14.007, 'Nonmetal', 15, 2);
+
+INSERT INTO atom VALUES (8, 'Oxygen', 'O', 15.999, 'Nonmetal', 16, 2);
+
+INSERT INTO atom VALUES (9, 'Fluorine', 'F', 18.9984, 'Nonmetal', 17, 2);  
+
+INSERT INTO atom VALUES (10, 'Neon', 'Ne', 20.180, 'Nonmetal', 18, 2);
+
+INSERT INTO atom VALUES (11, 'Sodium', 'Na', 22.98977, 'Metal', 1, 3);     
+
+INSERT INTO atom VALUES (12, 'Magnesium', 'Mg', 24.305, 'Metal', 2, 3);
+
+INSERT INTO atom VALUES (13, 'Aluminum', 'Al', 26.98154, 'Metal', 13, 3);     
+
+INSERT INTO atom VALUES (14, 'Silicon', 'Si', 28.085, 'Metalloid', 14, 3);
+
+INSERT INTO atom VALUES (15, 'Phosphorus', 'P', 30.974, 'Nonmetal', 15, 3);
+
+INSERT INTO atom VALUES (16, 'Sulfur', 'S', 32.06, 'Nonmetal', 16, 3);
+
+INSERT INTO atom VALUES (17, 'Chlorine', 'Cl', 35.45, 'Nonmetal', 17, 3);
+
+INSERT INTO atom VALUES (18, 'Argon', 'Ar', 39.95, 'Nonmetal', 18, 3);
+
+INSERT INTO atom VALUES (19, 'Potassium', 'K', 39.0983, 'Metal', 1, 4);
+
+INSERT INTO atom VALUES (20, 'Calcium', 'Ca', 40.078, 'Metal', 2, 4);
+
+INSERT INTO atom VALUES (21, 'Scandium', 'Sc', 44.9559, 'Metal', 3, 4);
+
+INSERT INTO atom VALUES (22, 'Titanium', 'Ti', 47.867, 'Metal', 4, 4);
+
+INSERT INTO atom VALUES (23, 'Vanadium', 'V', 50.942, 'Metal', 5, 4);
+
+INSERT INTO atom VALUES (24, 'Chronium', 'Cr', 51.996, 'Metal', 6, 4);
+
+INSERT INTO atom VALUES (25, 'Manganese', 'Mn', 54.938, 'Metal', 7, 4);
+
+INSERT INTO atom VALUES (26, 'Iron', 'Fe', 55.845, 'Metal', 8, 4);
+
+INSERT INTO atom VALUES (27, 'Cobalt', 'Co', 58.933, 'Metal', 9, 4);
+
+INSERT INTO atom VALUES (28, 'Nickel', 'Ni', 58.693, 'Metal', 10, 4);
+
+INSERT INTO atom VALUES (29, 'Copper', 'Cu', 63.546, 'Metal', 11, 4);
+
+INSERT INTO atom VALUES (30, 'Zinc', 'Zn', 65.38, 'Metal', 12, 4);
+
+INSERT INTO atom VALUES (31, 'Gallium', 'Ga', 69.723, 'Metal', 13, 4);
+
+INSERT INTO atom VALUES (32, 'Germanium', 'Ge', 72.63, 'Metalloid', 14, 4);
+
+INSERT INTO atom VALUES (33, 'Arsenic', 'As', 74.922, 'Metalloid', 15, 4);
+
+INSERT INTO atom VALUES (34, 'Selenium', 'Se', 78.971, 'Nonmetal', 16, 4);
+
+INSERT INTO atom VALUES (35, 'Bromine', 'Br', 79.904, 'Nonmetal', 17, 4);
+
+INSERT INTO atom VALUES (36, 'Krypton', 'Kr', 83.798, 'Nonmetal', 18, 4);
+
+INSERT INTO atom VALUES (37, 'Rubidium', 'Rb', 85.468, 'Metal', 1, 5);
+
+INSERT INTO atom VALUES (38, 'Strontium', 'Sr', 87.62, 'Metal', 2, 5);
+
+INSERT INTO atom VALUES (39, 'Yttrium', 'Y', 88.906, 'Metal', 3, 5);
+
+INSERT INTO atom VALUES (40, 'Zirconium', 'Zr', 91.224, 'Metal', 4, 5);
+
+INSERT INTO atom VALUES (41, 'Niobium', 'Nb', 92.906, 'Metal', 5, 5);
+
+INSERT INTO atom VALUES (42, 'Molybdenum', 'Mo', 95.95, 'Metal', 6, 5);
+
+INSERT INTO atom VALUES (43, 'Technetium', 'Tc', 96.906, 'Metal', 7, 5);
+
+INSERT INTO atom VALUES (44, 'Ruthenium', 'Ru', 101.07, 'Metal', 8, 5);
+
+INSERT INTO atom VALUES (45, 'Rhodium', 'Rh', 102.91, 'Metal', 9, 5);
+
+INSERT INTO atom VALUES (46, 'Palladium', 'Pd', 106.42, 'Metal', 10, 5);
+
+INSERT INTO atom VALUES (47, 'Silver', 'Ag', 107.87, 'Metal', 11, 5);
+
+INSERT INTO atom VALUES (48, 'Cadmium', 'Cd', 112.41, 'Metal', 12, 5);
+
+INSERT INTO atom VALUES (49, 'Indium', 'In', 114.82, 'Metal', 13, 5);
+
+INSERT INTO atom VALUES (50, 'Tin', 'Sn', 118.71, 'Metal', 14, 5);
+
+INSERT INTO atom VALUES (51, 'Antimony', 'Sb', 121.76, 'Metalloid', 15, 5);
+
+INSERT INTO atom VALUES (52, 'Tellurium', 'Te', 127.6, 'Matalloid', 16, 5);
+
+INSERT INTO atom VALUES (53, 'Iodine', 'I', 126.9, 'Nonmetal', 17, 5);
+
+INSERT INTO atom VALUES (54, 'Xenon', 'Xe', 131.29, 'Nonmetal', 18, 5);
+
+INSERT INTO atom VALUES (55, 'Caesium', 'Cs', 132.91, 'Metal', 1, 6);
+
+INSERT INTO atom VALUES (56, 'Barium', 'Ba', 137.33, 'Metal', 2, 6);
+
+INSERT INTO atom VALUES (57, 'Lanthanum', 'La', 138.91, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (58, 'Cerium', 'Ce', 140.12, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (59, 'Praseodymium', 'Pr', 140.91, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (60, 'Neodymium', 'Nd', 144.24, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (61, 'Promethium', 'Pm', 144.91, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (62, 'Samarium', 'Sm', 150.36, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (63, 'Europium', 'Eu', 151.96, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (64, 'Gadolinium', 'Gd', 157.25, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (65, 'Terbium', 'Tb', 158.93, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (66, 'Dysprosium', 'Dy', 162.5, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (67, 'Holmium', 'Ho', 164.93, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (68, 'Erbium', 'Er', 167.26, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (69, 'Thulium', 'Tm', 168.93, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (70, 'Ytterbium', 'Yb', 173.05, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (71, 'Lutetium', 'Lu', 174.97, 'Metal', NULL, 6);
+
+INSERT INTO atom VALUES (72, 'Hafnium', 'Hf', 178.49, 'Metal', 4, 6);
+
+INSERT INTO atom VALUES (73, 'Tantalum', 'Ta', 180.95, 'Metal', 5, 6);
+
+INSERT INTO atom VALUES (74, 'Tungsten', 'W', 183.84, 'Metal', 6, 6);
+
+INSERT INTO atom VALUES (75, 'Rhenium', 'Re', 186.21, 'Metal', 7, 6);
+
+INSERT INTO atom VALUES (76, 'Osmium', 'Os', 190.23, 'Metal', 8, 6);
+
+INSERT INTO atom VALUES (77, 'Iridium', 'Ir', 192.22, 'Metal', 9, 6);
+
+INSERT INTO atom VALUES (78, 'Platinum', 'Pt', 195.08, 'Metal', 10, 6);
+
+INSERT INTO atom VALUES (79, 'Gold', 'Au', 196.97, 'Metal', 11, 6);
+
+INSERT INTO atom VALUES (80, 'Mercury', 'Hg', 200.59, 'Metal', 12, 6);
+
+INSERT INTO atom VALUES (81, 'Thallium', 'Tl', 204.38, 'Metal', 13, 6);
+
+INSERT INTO atom VALUES (82, 'Lead', 'Pb', 207.2, 'Metal', 14, 6);
+
+INSERT INTO atom VALUES (83, 'Bismuth', 'Bi', 208.98, 'Metal', 15, 6);
+
+INSERT INTO atom VALUES (84, 'Polonium', 'Po', 208.9824, 'Metal', 16, 6);
+
+INSERT INTO atom VALUES (85, 'Astatine', 'At', 209.987, 'Metalloid', 17, 6);
+
+INSERT INTO atom VALUES (86, 'Radon', 'Rn', 222.0176, 'Nonmetal', 18, 6);
+
+INSERT INTO atom VALUES (87, 'Francium', 'Fr', 223.0198, 'Metal', 1, 7);
+
+INSERT INTO atom VALUES (88, 'Radium', 'Ra', 226.0254, 'Metal', 2, 7);
+
+INSERT INTO atom VALUES (89, 'Actinium', 'Ac', 227.02775, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (90, 'Thorium', 'Th', 232.038, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (91, 'Protactinium', 'Pa', 231.03588, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (92, 'Uranium', 'U', 238.0289, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (93, 'Neptunium', 'Np', 237.0482, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (94, 'Plutonium', 'Pu', 244.0642, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (95, 'Americium', 'Am', 243.06138, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (96, 'Curium', 'Cm', 247.0704, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (97, 'Berkelium', 'Bk', 247.07, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (98, 'Californium', 'Cf', 251.08, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (99, 'Einsteinium', 'Es', 252.08, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (100, 'Fermium', 'Fm', 257.0951, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (101, 'Mendelevium', 'Md', 258.1, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (102, 'Nobelium', 'No', 259.1, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (103, 'Lawrencium', 'Lr', 266.11, 'Metal', NULL, 7);
+
+INSERT INTO atom VALUES (104, 'Rutherford', 'Rf', 267.12, 'Metal', 4, 7);
+
+INSERT INTO atom VALUES (105, 'Dubnium', 'Db', 268.126, 'Metal', 5, 7);
+
+INSERT INTO atom VALUES (106, 'Seaborg', 'Sg', 271.133, 'Metal', 6, 7);
+
+INSERT INTO atom VALUES (107, 'Bohrium', 'Bh', 270.134, 'Metal', 7, 7);
+
+INSERT INTO atom VALUES (108, 'Hassium', 'Hs', 269.134, 'Metal', 8, 7);
+
+INSERT INTO atom VALUES (109, 'Meitnerium', 'Mt', 277.154, 'Metal', 9, 7);
+
+INSERT INTO atom VALUES (110, 'Darmstadtium', 'Ds', 282.166, 'Metal', 10, 7);
+
+INSERT INTO atom VALUES (111, 'Roentgenium', 'Rg', 282.169, 'Metal', 11, 7);
+
+INSERT INTO atom VALUES (112, 'Copernicium', 'Cn', 285, 'Metal', 12, 7);
+
+INSERT INTO atom VALUES (113, 'Nihonium', 'Nh', 286.2, 'Metal', 13, 7);
+
+INSERT INTO atom VALUES (114, 'Flerovium', 'Fl', 289, 'Metal', 14, 7);
+
+INSERT INTO atom VALUES (115, 'Moscovium', 'Mc', 290.2, 'Metal', 15, 7);
+
+INSERT INTO atom VALUES (116, 'Livermorium', 'Lv', 293.2, 'Metal', 16, 7);
+
+INSERT INTO atom VALUES (117, 'Tennessine', 'Ts', 294, 'Metal', 17, 7);
+
+INSERT INTO atom VALUES (118, 'Oganesson', 'Og', 295, 'Nonmetal', 18, 7);
