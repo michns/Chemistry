@@ -255,3 +255,14 @@ INSERT INTO atom VALUES (116, 'Livermorium', 'Lv', 293.2, 'Metal', 16, 7);
 INSERT INTO atom VALUES (117, 'Tennessine', 'Ts', 294, 'Metal', 17, 7);
 
 INSERT INTO atom VALUES (118, 'Oganesson', 'Og', 295, 'Nonmetal', 18, 7);
+
+
+
+-- A new table has been created. Let's check the structure of
+-- the created dataset.
+
+SELECT * FROM atom;
+
+/* The table includes the chemical elements known from modern
+periodic tables, divided into basic categories: metals,
+nonmetals and metalloids */
