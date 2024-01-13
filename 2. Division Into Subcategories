@@ -1,8 +1,10 @@
 -- For more detailed categorisation let's split all the chemical
--- elements into subcategories using conditional expressions:
+-- elements into subcategories using conditional expressions.
+-- To invoke resulting structure later, it's advisable to utilize a
+-- view statement.
 
 
-
+CREATE VIEW subcategories AS
 SELECT atomic_number, name, symbol, CASE 
 		WHEN "group" = 1 AND period = 1 OR
 			 "group" IN(14,15,16) AND period = 2 OR
