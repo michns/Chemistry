@@ -122,7 +122,7 @@ INSERT INTO atom VALUES (50, 'Tin', 'Sn', 118.71, 'Metal', 14, 5);
 
 INSERT INTO atom VALUES (51, 'Antimony', 'Sb', 121.76, 'Metalloid', 15, 5);
 
-INSERT INTO atom VALUES (52, 'Tellurium', 'Te', 127.6, 'Matalloid', 16, 5);
+INSERT INTO atom VALUES (52, 'Tellurium', 'Te', 127.6, 'Metalloid', 16, 5);
 
 INSERT INTO atom VALUES (53, 'Iodine', 'I', 126.9, 'Nonmetal', 17, 5);
 
