@@ -1,5 +1,8 @@
-          /* Table Initialization */
+# 1. Data Initialization
 
+## Table Initialization
+
+````sql
 CREATE TABLE "atom" (
 	"atomic_number"	INTEGER NOT NULL UNIQUE,
 	"name"	TEXT,
@@ -10,16 +13,16 @@ CREATE TABLE "atom" (
     "period"  INTEGER,
 	PRIMARY KEY("atomic_number")
 );
+````
+
+***
+
+## Data Insertion 
+
+Let's insert all the chemical elements into the atom table. 
 
 
---------------------------------------------------------------------
-
-          /* Data Insertion */
-
-/* Let's insert all the chemical elements into the atom table. */
-
-
-
+````sql
 INSERT INTO atom VALUES (1, 'Hydrogen', 'H', 1.0079, 'Nonmetal', 1, 1);
 
 INSERT INTO atom VALUES (2, 'Helium', 'He', 4.0026, 'Nonmetal', 18, 1);
@@ -255,14 +258,16 @@ INSERT INTO atom VALUES (116, 'Livermorium', 'Lv', 293.2, 'Metal', 16, 7);
 INSERT INTO atom VALUES (117, 'Tennessine', 'Ts', 294, 'Metal', 17, 7);
 
 INSERT INTO atom VALUES (118, 'Oganesson', 'Og', 295, 'Nonmetal', 18, 7);
+````
+***
 
+A new table has been created. Let's check the structure of
+the created dataset.
 
-
--- A new table has been created. Let's check the structure of
--- the created dataset.
-
+````sql
 SELECT * FROM atom;
+````
 
-/* The table includes the chemical elements known from modern
+The table includes the chemical elements known from modern
 periodic tables, divided into basic categories: metals,
-nonmetals and metalloids */
+nonmetals and metalloids.
