@@ -6,4 +6,4 @@ Enclosed datasets and code implementations are uploaded and developed for educat
  
 ## Projects
 
-* **Chemical analysis** - [SQL]: In this part the dataset including chemical elements has been created.
+* **Chemical analysis** - In this part the dataset including chemical elements has been created.
