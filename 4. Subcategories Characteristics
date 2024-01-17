@@ -1,3 +1,5 @@
+# 4. Subcategories Characteristics
+
 To chararacterize subcategories from the view created in previous
 section, we can do a query reffering to its details.
 In this example colums called the_lightest and the_heaviests
@@ -6,16 +8,16 @@ weight value in each subcategory.
 Column named max_minus_min represents difference between 
 atomic weight boundary values for each subcategory.
 
-
+````sql
 SELECT MIN(atomic_weight) AS the_lightest,                     
 MAX(atomic_weight) AS the_heaviest, AVG(atomic_weight) AS average, 
 (MAX(atomic_weight) - MIN(atomic_weight)) AS max_minus_min, subcategory 
 FROM subcategories GROUP BY subcategory ORDER BY max_minus_min;
+````sql
 
 
 
-
-Result:
+## Result:
 
 the_lightest	the_heaviest	   average	            max_minus_min	  subcategory
 
